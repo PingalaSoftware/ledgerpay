@@ -1,0 +1,44 @@
+/* .platform .platform-title {
+    text-align: center;
+} */
+
+.platform .platform-title h1 {
+    font-family: 'Poppins', Bold;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #51495f;
+    opacity: 1;
+}
+
+.platform .platform-title p {
+    font-family: 'Poppins', Regular;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #8b8399;
+    opacity: 1;
+    padding-top: 120px;
+}
+
+.platform .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+    justify-items: center;
+}
+
+.cards-container .card {
+    width: 800px;
+    height: 250px;
+    background-color: var(--primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,110 @@
+.ledgerpe-container {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #B18AF7;
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    margin-top : -200px;
+}
+
+.blur-effect {
+    align-self: flex-start;
+    margin-left:  100px;
+    width: 150px;
+    height: 150px;
+    background-image: url('/assets/Blur shape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.credit-cards {
+    position: relative;
+    z-index: 1;
+}
+
+.credit-card {
+    top: -200px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.credit-card.front {
+    top : -35vh;
+    left : -10vw;
+    z-index: 1;
+    transform: rotate(-10deg) translateY(-20px);
+    
+}
+
+.credit-card.back {
+    z-index: 2;
+}
+
+.content {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+
+.line-decoration {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    background-color: white;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.ledgerpe-btn {
+    background-color: white;
+    color: #B18AF7;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.ledgerpe-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+    .credit-cards {
+        margin-bottom: 40px;
+    }
+    
+    .credit-card {
+        position: relative;
+        transform: none !important;
+    }
+    
+    .content {
+        text-align: center;
+    }
+    
+    h1 {
+        padding-left: 0;
+    }
+    
+    .line-decoration {
+        display: none;
+    }
+}

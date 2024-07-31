@@ -1,0 +1,93 @@
+.hero-section {
+    background-color: #B18AF7;
+    background-image: url('/assets/backgroundimage.svg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand .logo {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-left: 1rem;
+}
+
+.btn-get-started {
+    background-color: white;
+    color: #a365f0;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    border-radius: 50px;
+
+
+}
+
+.btn-get-started .btn-text {
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+.hero-content {
+    color: white;
+    padding-top: 5rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.hero-title .black-text {
+    color: black;
+}
+
+.hero-title .bold-text {
+    font-weight: 500;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 80%;
+}
+
+.card-image {
+    position: absolute;
+    right: -35vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    
+}
+
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .card-image {
+        width: 70%;
+        top: auto;
+        bottom: 0;
+        transform: none;
+    }
+}

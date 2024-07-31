@@ -1,0 +1,55 @@
+
+.carousel-container {
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #B18AF7;
+    padding:  200px;
+    margin-top: -300px;
+    padding-bottom: 200px;
+}
+
+.trust-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.trust-heading {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.company-logo {
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+@media (max-width: 991px) {
+    .carousel-container {
+        position: relative;
+        margin-top: 2rem;
+    }
+    
+    .company-logo {
+        height: 30px;
+    }
+}
+

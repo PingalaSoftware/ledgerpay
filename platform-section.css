@@ -19,6 +19,7 @@
 }
 
 .platform-section .custom-card {
+    padding-right: 25px;
     border-radius: 20px;
     background-color: #fff;
     border: none;
@@ -27,7 +28,7 @@
 }
 
 .platform-section .custom-card .icon {
-    max-width: 40px;
+    height: 50px;
     margin-right: 20px;
 }
 

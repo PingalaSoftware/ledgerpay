@@ -1,109 +1,55 @@
-body {
+/* General Styling */
+/* body {
     background-color: #f7f7fe;
     font-family: 'Poppins', sans-serif;
+} */
+
+.platform-section {
+    margin: 30px 0;
 }
 
-p {
+.platform-section p {
     font-size: 20px;
     font-family: 'Segoe UI', Regular;
 }
 
-h2 {
+.platform-section h2 {
     font-size: 40px;
     font-family: 'Poppins', Bold;
 }
 
-.custom-card {
+.platform-section .custom-card {
     border-radius: 20px;
     background-color: #fff;
     border: none;
-    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
-.custom-card .card-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.custom-card .d-flex {
-    align-items: center;
-}
-
-.custom-card .icon {
+.platform-section .custom-card .icon {
     max-width: 40px;
     margin-right: 20px;
 }
 
-.text-container h5 {
+.platform-section .text-container h5 {
     font-size: 20px;
     font-family: 'Poppins', Bold;
 }
 
-.text-container p {
+.platform-section .text-container p {
     font-size: 16px;
     font-family: 'Segoe UI', Regular;
 }
 
-.plus-icon {
+.platform-section .plus-icon {
     position: absolute;
     bottom: 0;
     right: 0;
+    color: #fff;
     background-color: #d9b3ff;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 28px;
+    padding: 10px 20px;
+    font-size: 24px;
     font-weight: bold;
-}
-
-.crypto-section {
-    background-color: #f7f7fe;
-    padding: 50px 0;
-}
-
-.crypto-section h2 {
-    font-size: 40px;
-    font-family: 'Poppins', Bold;
-    margin-bottom: 20px;
-}
-
-.crypto-section h5 {
-    font-size: 20px;
-    font-family: 'Poppins', Bold;
-    /* margin-bottom: 50px; */
-}
-
-.crypto-section p {
-    font-size: 16px;
-    font-family: 'SegoeUI';
-    margin-bottom: 50px;
-}
-
-.crypto-card {
-    border-radius: 20px;
-    border: none;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.crypto-card .card-body {
-    padding: 20px;
-}
-
-.crypto-card .card-title {
-    font-size: 18px;
-    font-family: 'Poppins', Bold;
-    margin-bottom: 10px;
-}
-
-.crypto-card .card-text {
-    font-size: 16px;
-    font-family: 'Segoe UI', Regular;
 }

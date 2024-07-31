@@ -1,0 +1,8 @@
+/* Card Styling */
+.crypto-section .crypto-card {
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}

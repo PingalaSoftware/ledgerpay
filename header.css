@@ -1,9 +1,7 @@
 .hero-section {
     background-color: #B18AF7;
-    background-image: url('/assets/backgroundimage.svg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
     position: relative;
     overflow: hidden;
 
@@ -11,6 +9,7 @@
 
 .navbar {
     padding: 1rem 0;
+    z-index: 2;
 }
 
 .navbar-brand .logo {
@@ -41,8 +40,10 @@
 }
 
 .hero-content {
+    z-index: 2;
     color: white;
     padding-top: 5rem;
+    padding-bottom: 30vh;
 }
 
 .hero-title {
@@ -72,22 +73,18 @@
 }
 
 .card-image {
+    z-index: 1;
     position: absolute;
     right: -35vw;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    
+
 }
 
 @media (max-width: 991px) {
     .hero-title {
         font-size: 2.5rem;
     }
-    .card-image {
-        width: 70%;
-        top: auto;
-        bottom: 0;
-        transform: none;
-    }
+
 }

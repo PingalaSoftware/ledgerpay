@@ -1,4 +1,3 @@
-
 .carousel-container {
     z-index: 1;
     position: relative;
@@ -6,9 +5,40 @@
     left: 0;
     right: 0;
     background-color: #B18AF7;
-    padding:  200px;
-    margin-top: -300px;
+    margin-top: -200px;
     padding-bottom: 200px;
+}
+
+
+
+.carousel-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.company-logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+@media (max-width: 768px) {
+    .carousel-item .company-logo {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item .company-logo {
+        display: none;
+    }
+
+    .carousel-item .company-logo:nth-child(1),
+    .carousel-item .company-logo:nth-child(2) {
+        display: inline-block;
+    }
 }
 
 .trust-text {
@@ -45,11 +75,9 @@
 @media (max-width: 991px) {
     .carousel-container {
         position: relative;
-        margin-top: 2rem;
     }
-    
+
     .company-logo {
         height: 30px;
     }
 }
-

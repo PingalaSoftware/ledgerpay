@@ -6,12 +6,12 @@
     padding: 40px 20px;
     display: flex;
     align-items: center;
-    margin-top : -200px;
+    margin-top: -200px;
 }
 
 .blur-effect {
     align-self: flex-start;
-    margin-left:  100px;
+    margin-left: 100px;
     width: 150px;
     height: 150px;
     background-image: url('/assets/Blur shape.png');
@@ -21,12 +21,12 @@
 }
 
 .credit-cards {
+    top: -15vh;
     position: relative;
     z-index: 1;
 }
 
 .credit-card {
-    top: -200px;
     width: 100%;
     height: auto;
     position: absolute;
@@ -34,11 +34,9 @@
 }
 
 .credit-card.front {
-    top : -35vh;
-    left : -10vw;
+    left: -10vw;
     z-index: 1;
     transform: rotate(-10deg) translateY(-20px);
-    
 }
 
 .credit-card.back {
@@ -86,25 +84,20 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .credit-cards {
-        margin-bottom: 40px;
+        margin-top: 200px;
     }
-    
-    .credit-card {
-        position: relative;
-        transform: none !important;
+
+    .about-text {
+        top: 0;
+        margin-top: 500px;
     }
-    
-    .content {
-        text-align: center;
-    }
-    
-    h1 {
-        padding-left: 0;
-    }
-    
-    .line-decoration {
-        display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .credit-cards {
+        top: 0;
+        margin-top: 50px;
     }
 }

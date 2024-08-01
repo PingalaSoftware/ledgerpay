@@ -1,0 +1,37 @@
+.preregister-header {
+    background-color: #b18af7;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.preregister-header .text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.preregister-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.preregister-header p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.preregister-header .navbar {
+    padding-left: 85px;
+}
+
+@media (max-width: 991px) {
+    .preregister-header .navbar {
+        padding-left: 0;
+    }
+}

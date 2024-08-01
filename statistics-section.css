@@ -1,7 +1,7 @@
 .statistics-section {
   background-color: #B18AF7;
   padding-bottom: 60px;
-  margin-top: -100px;
+
 }
 
 .statistics-section h2 {
@@ -29,4 +29,28 @@
 .stat-label {
   font-size: 1rem;
   margin-top: 5px;
+}
+
+
+@media screen and (min-width: 991px) {
+  .statistics-section {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .statistics-section {
+    margin-top: -150px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stat-number {
+    font-size: 1.5rem;
+
+  }
 }

@@ -8,7 +8,7 @@ document
     const data = { email: email };
 
     fetch(
-      "https://b2b-dev-admin-on-prem.ledgermail.io//api/v1/pre-register/subscribe",
+      "https://b2b-dev-admin-on-prem.ledgermail.io/api/v1/pre-register/subscribe",
       {
         method: "POST",
         headers: {
@@ -25,6 +25,8 @@ document
       })
       .then((data) => {
         console.log("Success:", data);
+        alert(data.message);
+
         // Optionally, you can display a success message to the user
       })
       .catch((error) => {

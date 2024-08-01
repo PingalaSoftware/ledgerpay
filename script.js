@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
         country,
       };
 
+      if (!firstName || !lastName || !email || !country) {
+        alert("Please fill in all required fields.");
+        return;
+      }
       fetch("https://b2b-dev-admin-on-prem.ledgermail.io/api/v1/pre-register", {
         method: "POST",
         headers: {

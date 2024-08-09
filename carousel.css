@@ -1,49 +1,12 @@
-.carousel-container {
-    z-index: 1;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #B18AF7;
-    margin-top: -200px;
-    padding-bottom: 200px;
-}
-
-
-
-.carousel-item {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-.company-logo {
-    max-width: 100px;
-    max-height: 100px;
-}
-
-@media (max-width: 768px) {
-    .carousel-item .company-logo {
-        max-width: 80px;
-        max-height: 80px;
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-item .company-logo {
-        display: none;
-    }
-
-    .carousel-item .company-logo:nth-child(1),
-    .carousel-item .company-logo:nth-child(2) {
-        display: inline-block;
-    }
+.carousel-section {
+    background-color: #b18af7;
+    padding-top: 100px;
 }
 
 .trust-text {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
+
     margin-bottom: 0.5rem;
 }
 
@@ -55,29 +18,12 @@
 }
 
 .company-logo {
-    height: 40px;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    padding: 1rem;
-}
-
-@media (max-width: 991px) {
-    .carousel-container {
-        position: relative;
-    }
-
-    .company-logo {
-        height: 30px;
-    }
+.company-logo img {
+    height: 100%;
 }

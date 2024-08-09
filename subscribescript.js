@@ -1,3 +1,7 @@
+document.getElementById("nav-about-us").addEventListener("click" , function () {
+  document.getElementById("about-section").scrollIntoView({ behavior: "smooth" });
+})
+
 document
   .getElementById("subscribeForm")
   .addEventListener("submit", function (event) {

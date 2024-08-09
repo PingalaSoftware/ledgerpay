@@ -1,15 +1,15 @@
-.ledgerpe-container {
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
-    background-color: #B18AF7;
+.about-section {
+    background-color: #b18af7;
     color: white;
-    min-height: 100vh;
-    padding: 40px 20px;
+    position: relative;
+    padding: 100px 0;
     display: flex;
     align-items: center;
-    margin-top: -200px;
+    text-align: justify;
 }
 
 .blur-effect {
+    position: absolute;
     align-self: flex-start;
     margin-left: 100px;
     width: 150px;
@@ -21,9 +21,12 @@
 }
 
 .credit-cards {
-    top: -15vh;
     position: relative;
     z-index: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .credit-card {
@@ -34,17 +37,18 @@
 }
 
 .credit-card.front {
-    left: -10vw;
     z-index: 1;
     transform: rotate(-10deg) translateY(-20px);
 }
 
 .credit-card.back {
     z-index: 2;
+    transform: translateX(100px);
 }
 
-.content {
+.about-text .content {
     z-index: 1;
+    margin-left: 100px;
 }
 
 h1 {
@@ -71,7 +75,7 @@ p {
 
 .ledgerpe-btn {
     background-color: white;
-    color: #B18AF7;
+    color: #b18af7;
     border-radius: 25px;
     font-weight: 600;
     padding: 10px 25px;
@@ -99,5 +103,8 @@ p {
     .credit-cards {
         top: 0;
         margin-top: 50px;
+    }
+    .credit-card.back {
+        transform: translateX(0);
     }
 }

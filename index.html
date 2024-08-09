@@ -33,7 +33,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About Us</a>
+                            <a class="nav-link" id="nav-about-us" >About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
@@ -48,7 +48,12 @@
                 </div>
             </nav>
         </div>
-        <div class="container hero-content">
+    </header>
+    <div class="hero-content">
+        <img src="/assets/backgroundImage.svg" alt="Background Image" class="background-image">
+        <img src="/assets/card in hand.png" alt="LedgerPe Card" class="card-image" />
+        <img src="/assets/BackgroundImage.png" alt="LedgerPe Card" class="background-image-2" />
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <h1 class="hero-title">
@@ -67,42 +72,52 @@
                 </div>
             </div>
         </div>
-    </header>
-    <img src="/assets/backgroundImage.svg" alt="Background Image" class="background-image">
-    <img src="/assets/card in hand.png" alt="LedgerPe Card" class="card-image" />
-    <img src="/assets/BackgroundImage.png" alt="LedgerPe Card" class="background-image-2" />
+    </div>
+ 
     <section class="carousel-section">
-        <div class="container-fluid carousel-container">
+        <div class="container ">
             <h3 class="text-center trust-text">These Companies Trust Us</h3>
             <h2 class="text-center trust-heading">With Their Banking</h2>
-            <div id="companyCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-around align-items-center">
-                            <img src="/assets/companylogo1.png" alt="Company 1" class="company-logo">
-                            <img src="/assets/companylogo2.png" alt="Company 2" class="company-logo">
-                            <img src="/assets/companylogo3.png" alt="Company 3" class="company-logo">
-                            <img src="/assets/companylogo4.png" alt="Company 4" class="company-logo">
-                        </div>
+
+            <div class="row ">
+                <div class="justify-content-evenly col-6 col-md-3">
+                    <div class="company-logo">
+                        <img src="/assets/companylogo1.png" alt="Company 1" >
                     </div>
                 </div>
-
+                <div class="col-6 col-md-3">
+                    <div class="company-logo">
+                        <img src="/assets/companylogo2.png" alt="Company 2" >
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="company-logo">
+                        <img src="/assets/companylogo3.png" alt="Company 3" >
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="company-logo">
+                        <img src="/assets/companylogo4.png" alt="Company 4" >
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="about" class="about-section">
-        <div class="container-fluid ledgerpe-container">
+
+    <section id="about-section" class="about-section">
+        <div class="container">
             <div class="blur-effect"></div>
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-4">
+            <div class="row ">
+                <div class="col-12 col-md-4">
                     <div class="credit-cards">
-                        <img src="/assets/Credit card design front.png" alt="Ledgerpe Credit Card Front"
-                            class="credit-card front" />
                         <img src="/assets/Credit card design back.png" alt="Ledgerpe Credit Card Back"
                             class="credit-card back" />
+                        <img src="/assets/Credit card design front.png" alt="Ledgerpe Credit Card Front"
+                            class="credit-card front" />
+                        
                     </div>
                 </div>
-                <div class="col-lg-8 about-text">
+                <div class="col-12 col-md-8  about-text">
                     <div class="content">
                         <h1 class="mb-4">
                             <span class="line-decoration"></span>About Ledgerpe
@@ -160,8 +175,8 @@
             </div>
         </div>
     </section>
-    <section class="platform-section" style="color: #51495f;">
-        <div class="container text-center mt-5">
+    <section class="platform-section">
+        <div class="container text-center ">
             <p class="text-muted">Safe platform as</p>
             <h2>Security at fore front</h2>
         </div>
@@ -231,7 +246,7 @@
         </div>
     </section>
     <section class="crypto-section">
-        <div class="container text-center mt-5">
+        <div class="container text-center ">
             <h2>Unlimited Crypto Back On Every Purchase</h2>
         </div>
         <div class="container mt-5">
@@ -276,7 +291,6 @@
         </div>
     </section>
 
-    <section class="about-section"></section>
     <footer class="footer-section">
         <div class="footer-design-images-wrapper">
             <img src="./assets/shape.png" alt="Decorative Image 1" class="footer-img-1">

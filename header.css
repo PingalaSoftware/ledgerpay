@@ -1,10 +1,9 @@
 .hero-section {
-    background-color: #B18AF7;
+    background-color: #b18af7;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
-
 }
 
 .navbar {
@@ -19,6 +18,7 @@
 .navbar-nav .nav-link {
     color: white;
     margin-left: 1rem;
+    cursor: pointer;
 }
 
 .btn-get-started {
@@ -28,8 +28,6 @@
     padding: 0.5rem 1.5rem;
     font-weight: bold;
     border-radius: 50px;
-
-
 }
 
 .btn-get-started .btn-text {
@@ -40,15 +38,15 @@
 }
 
 .hero-content {
-    z-index: 4;
+    z-index: 0;
     color: white;
-    padding-top: 5rem;
-    padding-bottom: 30vh;
+    background-color: #b18af7;
+    padding: 150px 0 50px;
+    position: relative;
 }
 
 .hero-title {
     z-index: 4;
-
     font-size: 3rem;
     margin-bottom: 1rem;
     padding: 0;
@@ -88,11 +86,11 @@
 
 .background-image {
     position: absolute;
-    bottom: 30vh;
-    left: 30vw;
-    width: 100%;
+    top: 0;
+    margin-top: -30px;
+    right: 0;
     height: 100%;
-    z-index: 2;
+    z-index: -1;
 }
 
 .background-image-2 {
@@ -100,12 +98,10 @@
     top: 500px;
     left: 0;
     width: 50%;
-    z-index: 2;
 }
 
 @media (max-width: 991px) {
     .hero-title {
         font-size: 2.5rem;
     }
-
 }

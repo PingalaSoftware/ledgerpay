@@ -1,56 +1,52 @@
 .statistics-section {
-  background-color: #B18AF7;
-  padding-bottom: 60px;
-
+    background-color: #b18af7;
+    padding-bottom: 100px;
 }
 
 .statistics-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .stats-container {
-  background-color: #956AE1;
-  border-radius: 100px;
-  padding: 30px 20px;
-  margin-top: 40px;
+    background-color: #956ae1;
+    border-radius: 100px;
+    padding: 30px 20px;
+    margin-top: 40px;
 }
 
 .stat-item {
-  color: white;
+    color: white;
 }
 
 .stat-number {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 .stat-label {
-  font-size: 1rem;
-  margin-top: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
-
 @media screen and (min-width: 991px) {
-  .statistics-section {
-    margin-top: 0px;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
-  }
+    .statistics-section {
+        margin-top: 0px;
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
-  .statistics-section {
-    margin-top: -150px;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
-  }
+    .statistics-section {
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .stat-number {
-    font-size: 1.5rem;
-
-  }
+    .stat-number {
+        font-size: 1.5rem;
+    }
 }

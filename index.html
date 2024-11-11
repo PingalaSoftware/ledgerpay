@@ -1,153 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LedgerPay - LedgerFi</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LedgerPay - LedgerFi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <!-- Preconnect to external resources for faster loading -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./platform-section.css">
-    <link rel="stylesheet" href="./crypto-section.css">
-    <link rel="stylesheet" href="./footer-section.css">
-    <link rel="stylesheet" href="./statistics-section.css" />
-    <link rel="stylesheet" href="./header.css" />
-    <link rel="stylesheet" href="./carousel.css" />
-    <link rel="stylesheet" href="./aboutus.css" />
-</head>
+        <!-- Google Fonts and Material Icons -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
 
-<body>
-    <header class="hero-section">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="/"><img src="./assets/logo.png" alt="LedgerPe Logo" class="logo" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+        <!-- Custom CSS Files -->
+        <link rel="stylesheet" href="./global.css" />
+        <link rel="stylesheet" href="./platform-section.css" />
+        <link rel="stylesheet" href="./crypto-section.css" />
+        <link rel="stylesheet" href="./footer-section.css" />
+        <link rel="stylesheet" href="./statistics-section.css" />
+        <link rel="stylesheet" href="./header.css" />
+        <link rel="stylesheet" href="./carousel.css" />
+        <link rel="stylesheet" href="./about.css" />
+        <link rel="stylesheet" href="./card.css" />
 
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-about-us" >About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
+        <!-- Optional: preload important assets (images) for faster page load -->
+        <link rel="preload" href="./assets/logo.png" as="image" />
+        <link rel="preload" href="./assets/background-image.png" as="image" />
+        <link rel="preload" href="./assets/card in hand.png" as="image" />
+        <link rel="preload" href="./assets/backgroundImage.svg" as="image" />
+    </head>
 
-                        <li class="nav-item">
-                            <a href="/pre-register.html" class="nav-link btn btn-get-started">
-                                <div class="btn-text">Pre Register</div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <div class="hero-content">
-        <img src="./assets/backgroundImage.svg" alt="Background Image" class="background-image">
-        <img src="./assets/card in hand.png" alt="LedgerPe Card" class="card-image" />
-        <img src="./assets/BackgroundImage.png" alt="LedgerPe Card" class="background-image-2" />
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="hero-title">
-                        <div class="bold-text">
-                            One </br>
-                            <div class="black-text">LedgerPe</div>
-                            Card for All Your
-                        </div> Web3 Needs </br>Spend Earn Secure
-                    </h1>
-                    <h2 class="hero-subtitle"></h2>
-                    <p class="hero-text">
-                        Our Activate suite of business apps gives your Lorem ipsum dolor
-                        sit amet, consectetur.
-                    </p>
-                    <a href="/pre-register.html" class="btn btn-get-started">Pre Register</a>
-                </div>
+    <body>
+        <header id="hero-section" class="hero-section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="/"
+                        ><img
+                            src="./assets/logo.png"
+                            alt="LedgerPe Logo"
+                            class="logo"
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-about-us"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-security"
+                                    >Security</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="https://card.ledgerpe.io/"
+                                    class="nav-link btn btn-get-started"
+                                >
+                                    <span class="btn-text">Register Now</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </div>
-    </div>
- 
-    <section class="carousel-section">
-        <div class="container ">
-            <h3 class="text-center trust-text">These Companies Trust Us</h3>
-            <h2 class="text-center trust-heading">With Their Banking</h2>
+            <img
+                src="./assets/background-image.png"
+                alt="Background Pattern"
+                class="background-image"
+            />
+        </header>
 
-            <div class="row ">
-                <div class="justify-content-evenly col-6 col-md-3">
-                    <div class="company-logo">
-                        <img src="./assets/companylogo1.png" alt="Company 1" >
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="company-logo">
-                        <img src="./assets/companylogo2.png" alt="Company 2" >
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="company-logo">
-                        <img src="./assets/companylogo3.png" alt="Company 3" >
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="company-logo">
-                        <img src="./assets/companylogo4.png" alt="Company 4" >
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about-section" class="about-section">
-        <div class="container">
-            <div class="blur-effect"></div>
-            <div class="row ">
-                <div class="col-12 col-md-4">
-                    <div class="credit-cards">
-                        <img src="./assets/Credit card design back.png" alt="Ledgerpe Credit Card Back"
-                            class="credit-card back" />
-                        <img src="./assets/Credit card design front.png" alt="Ledgerpe Credit Card Front"
-                            class="credit-card front" />
-                        
-                    </div>
-                </div>
-                <div class="col-12 col-md-8  about-text">
-                    <div class="content">
-                        <h1 class="mb-4">
-                            <span class="line-decoration"></span>About Ledgerpe
+        <!-- Hero Section Content -->
+        <div id="hero-content" class="hero-content">
+            <img
+                src="./assets/backgroundImage.svg"
+                alt="Background Image"
+                class="background-image"
+            />
+            <img
+                src="./assets/card in hand.png"
+                alt="LedgerPe Card"
+                class="card-image"
+            />
+            <img
+                src="./assets/BackgroundImage.png"
+                alt="LedgerPe Card"
+                class="background-image-2"
+            />
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title">
+                            <div class="bold-text">
+                                One <br />
+                                <div class="black-text">LedgerPe</div>
+                                Card for All Your
+                            </div>
+                            Web3 Needs
                         </h1>
-                        <p>
-                            Simple! Our mission is to become the best design agency in the
-                            world!
+                        <p class="hero-text">
+                            Empower your payments and manage your assets with
+                            industry-leading security and ease.
                         </p>
-                        <p>
-                            What's an outsourced marketing un-agency, you say? Well, we're
-                            the antithesis to your run-of-the-mill agency that oversells and
-                            underdelivers.
-                        </p>
-                        <p>
-                            Lately, it's been about closing the biggest contracts. But what
-                            about making the biggest impact for clients? Our goal is to get
-                            RESULTS that will make clients HAPPY without overpricing.
-                        </p>
-                        <p>
-                            Feeling skeptical? Work with us, and see the difference between
-                            getting marketing partners invested in your growth, versus
-                            salesmen invested in milking you dry!
-                        </p>
-                        <a href="#" class="btn ledgerpe-btn">Get Card Now</a>
+                        <a
+                            href="https://card.ledgerpe.io/"
+                            class="btn btn-get-started"
+                            >Register Now</a
+                        >
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="statistics-section">
+
+        <!-- Carousel Section -->
+        <section id="carousel-section" class="carousel-section">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-6 col-md-3 d-flex flex-column align-items-center"
+                    >
+                        <div class="company-logo">
+                            <img
+                                src="./assets/companylogo1.png"
+                                alt="Company 1"
+                            />
+                        </div>
+                        <span>Powered by Alchemy Pay</span>
+                    </div>
+                    <div
+                        class="col-6 col-md-3 d-flex flex-column align-items-center"
+                    >
+                        <div class="company-logo">
+                            <img
+                                src="./assets/companylogo4.png"
+                                alt="Company 4"
+                            />
+                        </div>
+                        <span>Mastercard® Network</span>
+                    </div>
+                    <div
+                        class="col-6 col-md-3 d-flex flex-column align-items-center"
+                    >
+                        <div class="company-logo">
+                            <img
+                                src="./assets/companylogo3.png"
+                                alt="Company 3"
+                            />
+                        </div>
+                        <span>Data Privacy Compliance by PCI DSS</span>
+                    </div>
+                    <div
+                        class="col-6 col-md-3 d-flex flex-column align-items-center"
+                    >
+                        <div class="company-logo">
+                            <img
+                                src="./assets/companylogo2.png"
+                                alt="Company 2"
+                            />
+                        </div>
+                        <span>Custodial Assets Protection by Cobo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card Section -->
+        <section id="card-section" class="card-section">
+            <div class="container mt-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="credit-cards">
+                            <img
+                                src="./assets/Card tapping.jpg"
+                                alt="LedgerPe Credit Card"
+                                class="credit-card"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card-text">
+                        <div class="content">
+                            <h1 class="mb-4">About Our LedgerPe Card</h1>
+                            <p>
+                                Enjoy the freedom to spend your crypto at 1
+                                million+ merchants worldwide.
+                            </p>
+                            <p>
+                                LedgerPe cards offer seamless access to your
+                                funds, anytime, anywhere.
+                            </p>
+                            <div class="features">
+                                <p>
+                                    <span class="material-icons"
+                                        >check_circle</span
+                                    >Effortless Sign-Up
+                                </p>
+                                <p>
+                                    <span class="material-icons"
+                                        >check_circle</span
+                                    >Top up with Crypto or Fiat
+                                </p>
+                                <p>
+                                    <span class="material-icons"
+                                        >check_circle</span
+                                    >No hidden fees
+                                </p>
+                            </div>
+                            <a
+                                href="https://card.ledgerpe.io/"
+                                class="btn ledgerpe-btn"
+                                >Get Card Now</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="about-section">
+            <div class="container mt-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 about-text">
+                        <div class="content">
+                            <h1 class="mb-4">
+                                <!-- <span class="line-decoration"></span> -->
+                                About LedgerPe
+                            </h1>
+                            <p class="intro-text">
+                                Experience the future of finance with LedgerPe.
+                                Our innovative card empower you to spend your
+                                crypto and fiat currencies effortlessly.
+                            </p>
+                            <p><strong>Key Features: </strong></p>
+                            <p>
+                                Global Acceptance: Spend at millions of
+                                merchants worldwide.
+                            </p>
+                            <p>
+                                Instant Top-Ups: Easily top up your card with
+                                crypto or fiat.
+                            </p>
+                            <p>
+                                Security First: Advanced security measures to
+                                protect your funds.
+                            </p>
+                            <p>
+                                Real-Time Tracking: Monitor your spending and
+                                transactions.
+                            </p>
+                            <p>
+                                Join the LedgerPe revolution and unlock the full
+                                potential of your digital assets.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="credit-cards">
+                            <img
+                                src="./assets/Credit card.png"
+                                alt="LedgerPe Credit Card"
+                                class="credit-card front"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="statistics-section">
         <div class="container text-center  ">
             <p class="text-white mb-2 ">Our</p>
             <h2 class="text-white mb-5">Statistics</h2>
@@ -174,163 +317,250 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="platform-section">
-        <div class="container text-center ">
-            <p class="text-muted">Safe platform as</p>
-            <h2>Security at fore front</h2>
-        </div>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card custom-card">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <img class="icon" src="./assets/platform-Service_1.png" alt="EMV Chip Technology">
-                                <div class="text-container">
-                                    <h5 class="card-title">EMV Chip Technology</h5>
-                                    <p class="card-text">We'll earn white hat backlinks and send qualified traffic to
-                                        your business through guest posting.</p>
-                                </div>
-                            </div>
-                            <div class="plus-icon">+</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card custom-card">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <img class="icon" src="./assets/platform-Service_2.png" alt="Two-Factor Authentication">
-                                <div class="text-container">
-                                    <h5 class="card-title">Two-Factor Authentication</h5>
-                                    <p class="card-text">From content creation to consulting and keyword research, we
-                                        can help you outrank your competition.</p>
-                                </div>
-                            </div>
-                            <div class="plus-icon">+</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card custom-card">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <img class="icon" src="./assets/platform-Service_3.png" alt="Real-Time Monitoring">
-                                <div class="text-container">
-                                    <h5 class="card-title">Real-Time Monitoring</h5>
-                                    <p class="card-text">We make websites that don't just look great, but are also
-                                        optimized for UX, conversions, and search engine visibility.</p>
-                                </div>
-                            </div>
-                            <div class="plus-icon">+</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card custom-card">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <img class="icon" src="./assets/platform-Service_4.png" alt="Contactless Payment">
-                                <div class="text-container">
-                                    <h5 class="card-title">Contactless Payment</h5>
-                                    <p class="card-text">Outsource all your marketing needs to a dedicated marketing
-                                        team handpicked just for your business.</p>
-                                </div>
-                            </div>
-                            <div class="plus-icon">+</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="crypto-section">
-        <div class="container text-center ">
-            <h2>Unlimited Crypto Back On Every Purchase</h2>
-        </div>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-3 mb-4">
-                    <div class="card crypto-card">
-                        <img src="./assets/crypto-image-1.png" class="card-img-top" alt="No Annual Fee">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">No Annual Fee</h5>
-                            <p class="card-text">UX/UI Design</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card crypto-card">
-                        <img src="./assets/crypto-image-2.png" class="card-img-top" alt="Financial Autonomy, Your Way">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Financial Autonomy, Your Way</h5>
-                            <p class="card-text">UX/UI Design</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card crypto-card">
-                        <img src="./assets/crypto-image-3.png" class="card-img-top" alt="Shop Around The Globe">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Shop Around The Globe</h5>
-                            <p class="card-text">UX/UI Design</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card crypto-card">
-                        <img src="./assets/crypto-image-4.png" class="card-img-top" alt="Refer And Earn">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Refer And Earn</h5>
-                            <p class="card-text">UX/UI Design</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section> -->
 
-    <footer class="footer-section">
-        <div class="footer-design-images-wrapper">
-            <img src="./assets/shape.png" alt="Decorative Image 1" class="footer-img-1">
-            <img src="./assets/Asset 3.png" alt="Decorative Image 2" class="footer-img-2">
-            <!-- <img src="./assets/card-icon.png" alt="Card Icon" class="footer-img-3 pc-only"> -->
-        </div>
-        <div class="container text-center">
+        <!-- Platform Section -->
+        <section id="platform-section" class="platform-section">
+            <div class="container text-center">
+                <p class="text-muted">Safe platform as</p>
+                <h2>Security at Forefront</h2>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <img
+                                        class="icon"
+                                        src="./assets/platform-Service_1.png"
+                                        alt="EMV Chip Technology"
+                                    />
+                                    <div class="text-container">
+                                        <h5 class="card-title">
+                                            EMV Chip Technology
+                                        </h5>
+                                        <p class="card-text">
+                                            Enhanced security for your
+                                            transactions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="plus-icon">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <img
+                                        class="icon"
+                                        src="./assets/platform-Service_2.png"
+                                        alt="Two-Factor Authentication"
+                                    />
+                                    <div class="text-container">
+                                        <h5 class="card-title">
+                                            Two-Factor Authentication
+                                        </h5>
+                                        <p class="card-text">
+                                            Added layer of protection for your
+                                            account.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="plus-icon">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <img
+                                        class="icon"
+                                        src="./assets/platform-Service_3.png"
+                                        alt="Real-Time Monitoring"
+                                    />
+                                    <div class="text-container">
+                                        <h5 class="card-title">
+                                            Real-Time Monitoring for Your Peace
+                                            of Mind
+                                        </h5>
+                                        <p class="card-text">
+                                            Stay informed about your spending
+                                            24/7.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="plus-icon">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <img
+                                        class="icon"
+                                        src="./assets/platform-Service_4.png"
+                                        alt="Contactless Payment"
+                                    />
+                                    <div class="text-container">
+                                        <h5 class="card-title">
+                                            Contactless Payment
+                                        </h5>
+                                        <p class="card-text">
+                                            Quick and convenient, tap and go.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="plus-icon">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- crypto Section -->
+        <!-- <section id="crypto-section" class="crypto-section">
+            <div class="container text-center">
+                <h2>Unlimited Crypto Back On Every Purchase</h2>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card crypto-card">
+                            <img
+                                src="./assets/crypto-image-1.png"
+                                class="card-img-top"
+                                alt="No Annual Fee"
+                            />
+                            <div class="card-body text-center">
+                                <h5 class="card-title">No Annual Fee</h5>
+                                <p class="card-text">UX/UI Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card crypto-card">
+                            <img
+                                src="./assets/crypto-image-2.png"
+                                class="card-img-top"
+                                alt="Financial Autonomy, Your Way"
+                            />
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    Financial Autonomy, Your Way
+                                </h5>
+                                <p class="card-text">UX/UI Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card crypto-card">
+                            <img
+                                src="./assets/crypto-image-3.png"
+                                class="card-img-top"
+                                alt="Shop Around The Globe"
+                            />
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    Shop Around The Globe
+                                </h5>
+                                <p class="card-text">UX/UI Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card crypto-card">
+                            <img
+                                src="./assets/crypto-image-4.png"
+                                class="card-img-top"
+                                alt="Refer And Earn"
+                            />
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Refer And Earn</h5>
+                                <p class="card-text">UX/UI Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- footer Section -->
+        <footer id="footer-section" class="footer-section">
+            <div class="footer-content-wrapper">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>
+                        Experience the future of finance with LedgerPe. Our
+                        innovative card empower you to spend your crypto and
+                        fiat currencies effortlessly.
+                    </p>
+                    <div class="social-icons d-flex justify-content-start">
+                        <!-- <a class="mx-2" href="#"
+                            ><img
+                                src="./assets/facebook-icon.png"
+                                alt="Facebook"
+                        /></a> -->
+                        <a class="mx-2" href="#"
+                            ><img src="./assets/twitter-icon.png" alt="Twitter"
+                        /></a>
+                        <a class="mx-2" href="#"
+                            ><img
+                                src="./assets/telegram-icon.png"
+                                alt="Instagram"
+                        /></a>
+                        <!-- <a class="mx-2" href="#"
+                            ><img src="./assets/youtube-icon.png" alt="YouTube"
+                        /></a> -->
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <p><a id="footer-home">Home</a></p>
+                    <p><a id="footer-about-us">About Us</a></p>
+                    <p><a id="footer-card">Card</a></p>
+                    <p><a id="footer-security">Security</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <p>Email: info@ledgerpe.io</p>
+                    <!-- <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Business St, City, Country</p> -->
+                </div>
+            </div>
+
+            <!-- Newsletter Subscription -->
             <div class="subscribe-container">
-                <div class="text-container">
-                    <h2>Like Our Service? Subscribe Us</h2>
-                    <p>As a app web crawler expert, I help organizations adjust to the </br>
-                        expanding significance of internet promoting.</p>
-                </div>
+                <h3>Subscribe to Our LedgerPe</h3>
                 <form class="subscribe-form" id="subscribeForm">
+                    <input
+                        type="email"
+                        id="emailid"
+                        class="sub-form-control"
+                        placeholder="Enter your email"
+                    />
 
-                    <input type="email" id="emailid" class="sub-form-control" placeholder="Enter your email">
-                    <button class="btn" type="submit-subscribe" type="button">Subscribe</button>
+                    <button class="btn" type="submit-subscribe" type="button">
+                        Subscribe
+                    </button>
                 </form>
             </div>
-        </div>
-        <div class="container link-container mt-5 d-block d-md-flex justify-content-between">
-            <div class="social-icons d-flex justify-content-around">
-                <a class="mx-2" href="#"><img src="./assets/facebook-icon.png" alt="Facebook"></a>
-                <a class="mx-2" href="#"><img src="./assets/twitter-icon.png" alt="Twitter"></a>
-                <a class="mx-2" href="#"><img src="./assets/instagram-icon.png" alt="Instagram"></a>
-                <a class="mx-2" href="#"><img src="./assets/youtube-icon.png" alt="YouTube"></a>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; All Rights Reserved. |
+                    <a href="termPrivacy.html">Terms of Privacy</a> |
+                    <a href="userAgreement.html">User Agreement</a>
+                </p>
             </div>
-            <div class="text-center mt-2">
-                2020 — All Rights Reserved |
-                <a href="termPrivacy.html">Terms of Privacy</a> |
-                <a href="userAgreement.html">User Agreement</a>
-            </div>
-        </div>
-    </footer>
-    <script src="subscribescript.js"></script>
+        </footer>
 
-
-
-
-
-</body>
-
+        <script src="subscribescript.js"></script>
+    </body>
 </html>

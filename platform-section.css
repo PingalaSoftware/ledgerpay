@@ -1,31 +1,29 @@
-/* General Styling */
-/* body {
-    background-color: #f7f7fe;
-    font-family: 'Poppins', sans-serif;
-} */
-
-/* .platform-section {
-    margin: 30px 0;
-    padding-top: 100px;
-} */
+/* Platform Section Styling */
+.platform-section {
+    background: linear-gradient(135deg, #b18af7 30%, #d3c7f7 70%, #ffffff 100%);
+    padding: 100px 0;
+}
 
 .platform-section p {
     font-size: 20px;
+    color: #4a4a4a;
     font-family: 'Segoe UI', Regular;
 }
 
 .platform-section h2 {
     font-size: 40px;
     font-family: 'Poppins', Bold;
+    color: #3b1c76; /* Matching purple color */
 }
 
 .platform-section .custom-card {
-    padding-right: 25px;
+    padding: 20px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 100%;
+    position: relative;
 }
 
 .platform-section .custom-card .icon {
@@ -36,10 +34,12 @@
 .platform-section .text-container h5 {
     font-size: 20px;
     font-family: 'Poppins', Bold;
+    color: #3b1c76; /* Matching title color */
 }
 
 .platform-section .text-container p {
     font-size: 16px;
+    color: #4a4a4a; /* Gray color for readability */
     font-family: 'Segoe UI', Regular;
 }
 
@@ -48,10 +48,45 @@
     bottom: 0;
     right: 0;
     color: #fff;
-    background-color: #d9b3ff;
+    background-color: #5a1b9e; /* Dark purple for visibility */
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 10px 20px;
     font-size: 24px;
     font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 991px) {
+    .platform-section .text-container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .platform-section .custom-card {
+        padding: 15px;
+    }
+
+    .platform-section h2 {
+        font-size: 30px;
+    }
+
+    .platform-section p {
+        font-size: 18px;
+    }
+
+    .platform-section .text-container h5 {
+        font-size: 18px;
+    }
+
+    .platform-section .text-container p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .platform-section .container {
+        max-width: 1400px;
+    }
 }

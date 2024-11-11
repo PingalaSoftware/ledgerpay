@@ -1,12 +1,76 @@
-/* Card Styling */
+/* Crypto Section Styling */
 .crypto-section {
-    padding-top: 100px;
+    background-color: #b18af7;
+    padding: 100px 0;
 }
 
+.crypto-section h2 {
+    font-size: 40px;
+    font-family: 'Poppins', Bold;
+    color: #3b1c76; /* Purple color to match Platform Section */
+}
+
+/* Crypto Card Styling */
 .crypto-section .crypto-card {
     border-radius: 20px;
     background-color: #fff;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 100%;
+    position: relative;
+}
+
+.crypto-section .crypto-card .card-img-top {
+    border-radius: 20px 20px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.crypto-section .card-body {
+    padding: 20px;
+}
+
+.crypto-section .card-body h5 {
+    font-size: 18px;
+    font-family: 'Poppins', Bold;
+    color: #3b1c76; /* Purple to maintain the design flow */
+}
+
+.crypto-section .card-body p {
+    font-size: 14px;
+    color: #4a4a4a;
+    font-family: 'Segoe UI', Regular;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 991px) {
+    .crypto-section h2 {
+        font-size: 30px;
+    }
+
+    .crypto-section .card-body h5 {
+        font-size: 16px;
+    }
+
+    .crypto-section .card-body p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .crypto-section .crypto-card {
+        margin-bottom: 20px;
+    }
+
+    .crypto-section h2 {
+        font-size: 24px;
+    }
+
+    .crypto-section .card-body h5 {
+        font-size: 14px;
+    }
+
+    .crypto-section .card-body p {
+        font-size: 12px;
+    }
 }

@@ -1,0 +1,57 @@
+/* About Section - Syncing Style with Card Section */
+.about-section {
+    background: linear-gradient(135deg, #b18af7 30%, #d3c7f7 70%, #ffffff 100%);
+    padding: 100px 0;
+    color: #333;
+}
+
+.about-section .container {
+    max-width: 1200px;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #3b1c76;
+    position: relative;
+}
+
+.line-decoration {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    background-color: #3b1c76;
+}
+
+.about-text .intro-text {
+    font-size: 1.2rem;
+    color: #5a1b9e;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+}
+
+/* Shared Media Queries */
+@media screen and (max-width: 991px) {
+    .credit-cards {
+        margin-top: 50px;
+    }
+    .card-text,
+    .about-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .credit-card {
+        width: 95%;
+        max-width: 450px;
+    }
+    .card-text h1,
+    .about-text h1 {
+        font-size: 1.8rem;
+    }
+}

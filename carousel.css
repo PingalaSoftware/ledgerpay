@@ -1,29 +1,75 @@
+/* Carousel Section */
 .carousel-section {
     background-color: #b18af7;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .trust-text {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1rem;
-
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .trust-heading {
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .company-logo {
     height: 80px;
     padding: 20px;
     text-align: center;
-    background-color: white;
 }
 
 .company-logo img {
     height: 100%;
+    width: auto;
+}
+
+.carousel-section span {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.carousel-section .row {
+    margin-top: 20px;
+}
+
+.carousel-section .container {
+    max-width: 1800px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.carousel-section .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.carousel-section .company-logo img {
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.carousel-section .col-md-3 span {
+    font-size: 0.9rem;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .trust-heading {
+        font-size: 1.8rem;
+    }
+
+    .trust-text {
+        font-size: 1.1rem;
+    }
 }

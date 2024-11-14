@@ -1,9 +1,17 @@
-.hero-section {
+/* .hero-section {
     background-color: #b18af7;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
+} */
+
+.hero-section {
+    background-color: var(--primary);
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
 .navbar {
@@ -11,8 +19,26 @@
     z-index: 3;
 }
 
+.navbar-brand {
+    position: absolute;
+    left: 0;
+}
+
 .navbar-brand .logo {
     height: 40px;
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 0;
+}
+
+.navbar-toggler .material-icons {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
 }
 
 .navbar-nav .nav-link {
@@ -48,9 +74,6 @@
 .hero-title {
     z-index: 4;
     font-size: 3rem;
-    margin-bottom: 1rem;
-    padding: 0;
-    margin-bottom: 50px;
 }
 
 .hero-title .black-text {
@@ -103,5 +126,28 @@
 @media (max-width: 991px) {
     .hero-title {
         font-size: 2.5rem;
+    }
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: var(--primary);
+        z-index: 4;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
+
+    .navbar-toggler-icon {
+        color: #fff;
     }
 }

@@ -43,24 +43,27 @@
 
     <body>
         <header id="hero-section" class="hero-section">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="/"
-                        ><img
+            <div class="container py-2">
+                <nav
+                    class="navbar navbar-expand-lg d-flex justify-content-between"
+                >
+                    <a class="navbar-brand" href="/">
+                        <img
                             src="./assets/logo.png"
                             alt="LedgerPe Logo"
                             class="logo"
-                    /></a>
+                        />
+                    </a>
                     <button
                         class="navbar-toggler"
                         type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
                         aria-controls="navbarNav"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="material-icons">menu</span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
@@ -86,6 +89,7 @@
                     </div>
                 </nav>
             </div>
+
             <img
                 src="./assets/background-image.png"
                 alt="Background Pattern"
@@ -94,31 +98,34 @@
         </header>
 
         <!-- Hero Section Content -->
-        <div id="hero-content" class="hero-content">
+        <div id="hero-content" class="hero-content position-relative">
             <img
                 src="./assets/backgroundImage.svg"
                 alt="Background Image"
-                class="background-image"
+                class="background-image w-100"
+                loading="lazy"
             />
             <img
                 src="./assets/card in hand.png"
                 alt="LedgerPe Card"
-                class="card-image"
+                class="card-image pc-only"
+                loading="lazy"
             />
             <img
                 src="./assets/BackgroundImage.png"
-                alt="LedgerPe Card"
-                class="background-image-2"
+                alt="LedgerPe Background"
+                class="background-image-2 pc-only"
+                loading="lazy"
             />
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <h1 class="hero-title">
-                            <div class="bold-text">
-                                One <br />
-                                <div class="black-text">LedgerPe</div>
-                                Card for All Your
-                            </div>
+                            <span class="bold-text"
+                                >One <br />
+                                <span class="black-text">LedgerPe</span> Card
+                                for All Your
+                            </span>
                             Web3 Needs
                         </h1>
                         <p class="hero-text">
@@ -128,8 +135,10 @@
                         <a
                             href="https://card.ledgerpe.io/"
                             class="btn btn-get-started"
-                            >Register Now</a
+                            aria-label="Register for LedgerPe Card"
                         >
+                            Register Now
+                        </a>
                     </div>
                 </div>
             </div>
@@ -138,9 +147,9 @@
         <!-- Carousel Section -->
         <section id="carousel-section" class="carousel-section">
             <div class="container">
-                <div class="row">
+                <div class="row text-center">
                     <div
-                        class="col-6 col-md-3 d-flex flex-column align-items-center"
+                        class="image-card col-12 col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0"
                     >
                         <div class="company-logo">
                             <img
@@ -151,7 +160,7 @@
                         <span>Powered by Alchemy Pay</span>
                     </div>
                     <div
-                        class="col-6 col-md-3 d-flex flex-column align-items-center"
+                        class="image-card col-12 col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0"
                     >
                         <div class="company-logo">
                             <img
@@ -162,7 +171,7 @@
                         <span>Mastercard® Network</span>
                     </div>
                     <div
-                        class="col-6 col-md-3 d-flex flex-column align-items-center"
+                        class="image-card col-12 col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0"
                     >
                         <div class="company-logo">
                             <img
@@ -173,7 +182,7 @@
                         <span>Data Privacy Compliance by PCI DSS</span>
                     </div>
                     <div
-                        class="col-6 col-md-3 d-flex flex-column align-items-center"
+                        class="image-card col-12 col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0"
                     >
                         <div class="company-logo">
                             <img
@@ -566,5 +575,6 @@
         </footer>
 
         <script src="subscribescript.js"></script>
+        <script src="navbarscript.js"></script>
     </body>
 </html>

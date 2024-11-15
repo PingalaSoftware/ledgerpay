@@ -66,8 +66,8 @@
 .hero-content {
     z-index: 0;
     color: white;
-    background-color: #b18af7;
-    padding: 150px 0 50px;
+    background-color: var(--primary);
+    padding: 150px 0 150px;
     position: relative;
 }
 
@@ -123,11 +123,11 @@
     width: 50%;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .hero-title {
         font-size: 2.5rem;
     }
-}
+} */
 
 /* Responsive Navbar */
 @media (max-width: 768px) {

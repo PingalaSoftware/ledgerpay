@@ -1,7 +1,6 @@
 /* About Section - Syncing Style with Card Section */
 .about-section {
     background: linear-gradient(135deg, #b18af7 30%, #d3c7f7 70%, #ffffff 100%);
-    padding: 100px 0;
     color: #333;
 }
 
@@ -32,17 +31,6 @@
 .about-text p {
     font-size: 1.1rem;
     color: #4a4a4a;
-}
-
-/* Shared Media Queries */
-@media screen and (max-width: 991px) {
-    .credit-cards {
-        margin-top: 50px;
-    }
-    .card-text,
-    .about-text {
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 768px) {

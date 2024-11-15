@@ -1,7 +1,7 @@
 /* Platform Section Styling */
 .platform-section {
     background: linear-gradient(135deg, #b18af7 30%, #d3c7f7 70%, #ffffff 100%);
-    padding: 100px 0;
+    /* padding: 100px 0; */
 }
 
 .platform-section p {
@@ -57,15 +57,20 @@
 }
 
 /* Media Queries for Responsiveness */
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .platform-section .text-container {
         text-align: center;
     }
-}
+} */
 
 @media screen and (max-width: 768px) {
     .platform-section .custom-card {
         padding: 15px;
+        width: 90%; /* Reduce card width for mobile */
+        margin: 0 auto; /* Center align cards */
+        display: flex;
+        flex-direction: column; /* Ensure content is stacked in rows */
+        align-items: center; /* Center align content */
     }
 
     .platform-section h2 {
@@ -76,17 +81,33 @@
         font-size: 18px;
     }
 
+    .platform-section .icon {
+        margin: 0 0 10px 0; /* Reduce margin and position below title */
+        height: 40px; /* Reduce icon size */
+    }
+
+    .platform-section .text-container {
+        text-align: center; /* Center align text */
+        margin: 0; /* Remove additional margins */
+    }
+
     .platform-section .text-container h5 {
         font-size: 18px;
+        margin-bottom: 10px; /* Add space below title */
     }
 
     .platform-section .text-container p {
         font-size: 14px;
     }
+
+    .platform-section .plus-icon {
+        font-size: 20px; /* Slightly reduce size */
+        padding: 8px 16px;
+    }
 }
 
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
     .platform-section .container {
         max-width: 1400px;
     }
-}
+} */

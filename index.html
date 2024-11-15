@@ -98,7 +98,7 @@
         </header>
 
         <!-- Hero Section Content -->
-        <div id="hero-content" class="hero-content position-relative">
+        <div id="hero-content" class="hero-content">
             <img
                 src="./assets/backgroundImage.svg"
                 alt="Background Image"
@@ -145,11 +145,11 @@
         </div>
 
         <!-- Carousel Section -->
-        <section id="carousel-section" class="carousel-section">
+        <section id="carousel-section-pc" class="carousel-section pc-only py-5">
             <div class="container">
                 <div class="row text-center">
                     <div
-                        class="image-card col-12 col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0"
+                        class="image-card col-6 col-md-3 d-flex flex-column align-items-center"
                     >
                         <div class="company-logo">
                             <img
@@ -160,7 +160,7 @@
                         <span>Powered by Alchemy Pay</span>
                     </div>
                     <div
-                        class="image-card col-12 col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0"
+                        class="image-card col-6 col-md-3 d-flex flex-column align-items-center"
                     >
                         <div class="company-logo">
                             <img
@@ -171,7 +171,7 @@
                         <span>Mastercard® Network</span>
                     </div>
                     <div
-                        class="image-card col-12 col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0"
+                        class="image-card col-6 col-md-3 d-flex flex-column align-items-center"
                     >
                         <div class="company-logo">
                             <img
@@ -182,7 +182,7 @@
                         <span>Data Privacy Compliance by PCI DSS</span>
                     </div>
                     <div
-                        class="image-card col-12 col-md-3 d-flex flex-column align-items-center mb-4 mb-md-0"
+                        class="image-card col-6 col-md-3 d-flex flex-column align-items-center"
                     >
                         <div class="company-logo">
                             <img
@@ -196,10 +196,64 @@
             </div>
         </section>
 
+        <section
+            id="carousel-section-mobile"
+            class="carousel-section mobile-only py-2"
+        >
+            <div class="container">
+                <div class="row text-center">
+                    <div
+                        class="image-card col-6 col-md-3 d-flex flex-column align-items-center"
+                    >
+                        <div class="company-logo">
+                            <img
+                                src="./assets/companylogo1.png"
+                                alt="Company 1"
+                            />
+                        </div>
+                        <!-- <span>Powered by Alchemy Pay</span> -->
+                    </div>
+                    <div
+                        class="image-card col-6 col-md-3 d-flex flex-column align-items-center"
+                    >
+                        <div class="company-logo">
+                            <img
+                                src="./assets/companylogo3.png"
+                                alt="Company 4"
+                            />
+                        </div>
+                        <!-- <span>Mastercard® Network</span> -->
+                    </div>
+                    <div
+                        class="image-card col-6 col-md-3 d-flex flex-column align-items-center"
+                    >
+                        <div class="company-logo">
+                            <img
+                                src="./assets/companylogo2.png"
+                                alt="Company 3"
+                            />
+                        </div>
+                        <!-- <span>Data Privacy Compliance by PCI DSS</span> -->
+                    </div>
+                    <div
+                        class="image-card col-6 col-md-3 d-flex flex-column align-items-center"
+                    >
+                        <div class="company-logo">
+                            <img
+                                src="./assets/companylogo4.png"
+                                alt="Company 2"
+                            />
+                        </div>
+                        <!-- <span>Custodial Assets Protection by Cobo</span> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Card Section -->
-        <section id="card-section" class="card-section">
-            <div class="container mt-5">
-                <div class="row align-items-center">
+        <section id="card-section" class="card-section py-5">
+            <div class="container">
+                <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="credit-cards">
                             <img
@@ -209,9 +263,9 @@
                             />
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 card-text">
-                        <div class="content">
-                            <h1 class="mb-4">About Our LedgerPe Card</h1>
+                    <div class="col-md-6 mb-4">
+                        <h1 class="my-4">About Our LedgerPe Card</h1>
+                        <div class="text-left">
                             <p>
                                 Enjoy the freedom to spend your crypto at 1
                                 million+ merchants worldwide.
@@ -220,37 +274,35 @@
                                 LedgerPe cards offer seamless access to your
                                 funds, anytime, anywhere.
                             </p>
-                            <div class="features">
-                                <p>
-                                    <span class="material-icons"
-                                        >check_circle</span
-                                    >Effortless Sign-Up
-                                </p>
-                                <p>
-                                    <span class="material-icons"
-                                        >check_circle</span
-                                    >Top up with Crypto or Fiat
-                                </p>
-                                <p>
-                                    <span class="material-icons"
-                                        >check_circle</span
-                                    >No hidden fees
-                                </p>
-                            </div>
-                            <a
-                                href="https://card.ledgerpe.io/"
-                                class="btn ledgerpe-btn"
-                                >Get Card Now</a
-                            >
                         </div>
+                        <div class="features">
+                            <p>
+                                <span class="material-icons">check_circle</span
+                                >Effortless Sign-Up
+                            </p>
+                            <p>
+                                <span class="material-icons">check_circle</span
+                                >Top up with Crypto or Fiat
+                            </p>
+                            <p>
+                                <span class="material-icons">check_circle</span
+                                >No hidden fees
+                            </p>
+                        </div>
+                        <a
+                            href="https://card.ledgerpe.io/"
+                            class="btn ledgerpe-btn"
+                        >
+                            Get Card Now
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about-section" class="about-section">
-            <div class="container mt-5">
+        <section id="about-section" class="about-section py-5">
+            <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 about-text">
                         <div class="content">
@@ -258,29 +310,31 @@
                                 <!-- <span class="line-decoration"></span> -->
                                 About LedgerPe
                             </h1>
-                            <p class="intro-text">
+                            <p class="intro-text text-justify">
                                 Experience the future of finance with LedgerPe.
                                 Our innovative card empower you to spend your
                                 crypto and fiat currencies effortlessly.
                             </p>
-                            <p><strong>Key Features: </strong></p>
-                            <p>
+                            <p class="text-left">
+                                <strong>Key Features: </strong>
+                            </p>
+                            <p class="text-justify">
                                 Global Acceptance: Spend at millions of
                                 merchants worldwide.
                             </p>
-                            <p>
+                            <p class="text-justify">
                                 Instant Top-Ups: Easily top up your card with
                                 crypto or fiat.
                             </p>
-                            <p>
+                            <p class="text-justify">
                                 Security First: Advanced security measures to
                                 protect your funds.
                             </p>
-                            <p>
+                            <p class="text-justify">
                                 Real-Time Tracking: Monitor your spending and
                                 transactions.
                             </p>
-                            <p>
+                            <p class="text-justify">
                                 Join the LedgerPe revolution and unlock the full
                                 potential of your digital assets.
                             </p>
@@ -329,7 +383,7 @@
     </section> -->
 
         <!-- Platform Section -->
-        <section id="platform-section" class="platform-section">
+        <section id="platform-section" class="platform-section py-5">
             <div class="container text-center">
                 <p class="text-muted">Safe platform as</p>
                 <h2>Security at Forefront</h2>
@@ -392,7 +446,7 @@
                                         alt="Real-Time Monitoring"
                                     />
                                     <div class="text-container">
-                                        <h5 class="card-title">
+                                        <h5 class="card-title textj">
                                             Real-Time Monitoring for Your Peace
                                             of Mind
                                         </h5>
@@ -504,7 +558,7 @@
             <div class="footer-content-wrapper">
                 <div class="footer-column">
                     <h3>About Us</h3>
-                    <p>
+                    <p class="about-text">
                         Experience the future of finance with LedgerPe. Our
                         innovative card empower you to spend your crypto and
                         fiat currencies effortlessly.
@@ -532,7 +586,7 @@
                         /></a> -->
                     </div>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column text-left">
                     <h3>Quick Links</h3>
                     <p><a id="footer-home">Home</a></p>
                     <p><a id="footer-about-us">About Us</a></p>
@@ -567,7 +621,7 @@
             <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <p>
-                    &copy; All Rights Reserved. |
+                    2024 &copy; All Rights Reserved. |
                     <a href="termPrivacy.html">Terms of Privacy</a> |
                     <a href="userAgreement.html">User Agreement</a>
                 </p>

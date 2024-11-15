@@ -1,23 +1,27 @@
-const navbarToggler = document.querySelector('.navbar-toggler');
-const navbarCollapse = document.getElementById('navbarNav');
+// Select elements
+const menuBtn = document.querySelector('.menu-btn');
+const menuItems = document.querySelector('.menu-items');
+const menuOverlay = document.querySelector('.menu-overlay');
 
-// Toggle navbar on button click with smooth behavior
-navbarToggler.addEventListener('click', () => {
-    navbarCollapse.classList.toggle('show');
-    navbarCollapse.style.transition = 'transform 1s ease'; // Adjust slide timing
+// Toggle menu and overlay
+menuBtn.addEventListener('click', () => {
+    menuItems.classList.toggle('open');
+    menuOverlay.classList.toggle('active');
+    menuBtn.classList.toggle('open');
 });
 
-// Close navbar when clicking outside of it or inside it
-document.addEventListener('click', (event) => {
-    const isClickInsideNavbar =
-        navbarCollapse.contains(event.target) ||
-        navbarToggler.contains(event.target);
-    if (!isClickInsideNavbar) {
-        navbarCollapse.classList.remove('show');
+// Close menu when clicking on the overlay
+menuOverlay.addEventListener('click', () => {
+    menuItems.classList.remove('open');
+    menuOverlay.classList.remove('active');
+    menuBtn.classList.remove('open');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!menuItems.contains(e.target) && !menuBtn.contains(e.target)) {
+        menuItems.classList.remove('open');
+        menuOverlay.classList.remove('active');
+        menuBtn.classList.remove('open');
     }
-});
-
-// Close navbar when a menu item is clicked
-navbarCollapse.addEventListener('click', () => {
-    navbarCollapse.classList.remove('show');
 });

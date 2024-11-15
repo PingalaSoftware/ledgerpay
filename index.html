@@ -54,23 +54,16 @@
                             class="logo"
                         />
                     </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
+                    <!-- Overlay -->
+                    <div class="menu-overlay"></div>
+                    <button class="navbar-toggler menu-btn" type="button">
                         <span class="material-icons">menu</span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-collapse menu-items" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a
                                     class="nav-link"
-                                    id="nav-home"
                                     onclick="scrollToElement('hero-content')"
                                     >Home</a
                                 >
@@ -78,7 +71,6 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link"
-                                    id="nav-card"
                                     onclick="scrollToElement('card-section')"
                                     >Card</a
                                 >
@@ -86,7 +78,6 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link"
-                                    id="nav-about-us"
                                     onclick="scrollToElement('about-section')"
                                     >About Us</a
                                 >
@@ -94,7 +85,6 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link"
-                                    id="nav-security"
                                     onclick="scrollToElement('platform-section')"
                                     >Security</a
                                 >
@@ -102,7 +92,6 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link"
-                                    id="nav-subscribe"
                                     onclick="scrollToElement('subscribe-section')"
                                     >Subscribe</a
                                 >
@@ -111,7 +100,7 @@
                                 <a
                                     href="https://card.ledgerpe.io/"
                                     target="_blank"
-                                    class="nav-link-btn btn btn-get-started"
+                                    class="btn btn-get-started"
                                 >
                                     <span class="btn-text">Register Now</span>
                                 </a>
@@ -120,12 +109,6 @@
                     </div>
                 </nav>
             </div>
-
-            <img
-                src="./assets/background-image.png"
-                alt="Background Pattern"
-                class="background-image"
-            />
         </header>
 
         <!-- Hero Section Content -->
@@ -426,13 +409,15 @@
                     <div class="col-md-6 mb-4">
                         <div class="card custom-card">
                             <div class="card-body">
-                                <div class="d-flex">
+                                <div
+                                    class="d-flex justify-content-center align-items-center"
+                                >
                                     <img
                                         class="icon"
                                         src="./assets/platform-Service_1.png"
                                         alt="EMV Chip Technology"
                                     />
-                                    <div class="text-container">
+                                    <div class="text-container flex-grow-1">
                                         <h5 class="card-title">
                                             EMV Chip Technology
                                         </h5>
@@ -449,13 +434,15 @@
                     <div class="col-md-6 mb-4">
                         <div class="card custom-card">
                             <div class="card-body">
-                                <div class="d-flex">
+                                <div
+                                    class="d-flex justify-content-center align-items-center"
+                                >
                                     <img
                                         class="icon"
                                         src="./assets/platform-Service_2.png"
                                         alt="Two-Factor Authentication"
                                     />
-                                    <div class="text-container">
+                                    <div class="text-container flex-grow-1">
                                         <h5 class="card-title">
                                             Two-Factor Authentication
                                         </h5>
@@ -472,14 +459,16 @@
                     <div class="col-md-6 mb-4">
                         <div class="card custom-card">
                             <div class="card-body">
-                                <div class="d-flex">
+                                <div
+                                    class="d-flex justify-content-center align-items-center"
+                                >
                                     <img
                                         class="icon"
                                         src="./assets/platform-Service_3.png"
                                         alt="Real-Time Monitoring"
                                     />
-                                    <div class="text-container">
-                                        <h5 class="card-title textj">
+                                    <div class="text-container flex-grow-1">
+                                        <h5 class="card-title">
                                             Real-Time Monitoring for Your Peace
                                             of Mind
                                         </h5>
@@ -496,13 +485,15 @@
                     <div class="col-md-6 mb-4">
                         <div class="card custom-card">
                             <div class="card-body">
-                                <div class="d-flex">
+                                <div
+                                    class="d-flex justify-content-center align-items-center"
+                                >
                                     <img
                                         class="icon"
                                         src="./assets/platform-Service_4.png"
                                         alt="Contactless Payment"
                                     />
-                                    <div class="text-container">
+                                    <div class="text-container flex-grow-1">
                                         <h5 class="card-title">
                                             Contactless Payment
                                         </h5>

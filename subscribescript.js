@@ -1,42 +1,42 @@
-document.getElementById('nav-about-us').addEventListener('click', function () {
-    document
-        .getElementById('about-section')
-        .scrollIntoView({ behavior: 'smooth' });
-});
+// document.getElementById('nav-about-us').addEventListener('click', function () {
+//     document
+//         .getElementById('about-section')
+//         .scrollIntoView({ behavior: 'smooth' });
+// });
 
-document.getElementById('nav-security').addEventListener('click', function () {
-    document
-        .getElementById('platform-section')
-        .scrollIntoView({ behavior: 'smooth' });
-});
+// document.getElementById('nav-security').addEventListener('click', function () {
+//     document
+//         .getElementById('platform-section')
+//         .scrollIntoView({ behavior: 'smooth' });
+// });
 
-document.getElementById('footer-home').addEventListener('click', function () {
-    document
-        .getElementById('hero-section')
-        .scrollIntoView({ behavior: 'smooth' });
-});
+// document.getElementById('footer-home').addEventListener('click', function () {
+//     document
+//         .getElementById('hero-section')
+//         .scrollIntoView({ behavior: 'smooth' });
+// });
 
-document.getElementById('footer-card').addEventListener('click', function () {
-    document
-        .getElementById('card-section')
-        .scrollIntoView({ behavior: 'smooth' });
-});
+// document.getElementById('footer-card').addEventListener('click', function () {
+//     document
+//         .getElementById('card-section')
+//         .scrollIntoView({ behavior: 'smooth' });
+// });
 
-document
-    .getElementById('footer-about-us')
-    .addEventListener('click', function () {
-        document
-            .getElementById('about-section')
-            .scrollIntoView({ behavior: 'smooth' });
-    });
+// document
+//     .getElementById('footer-about-us')
+//     .addEventListener('click', function () {
+//         document
+//             .getElementById('about-section')
+//             .scrollIntoView({ behavior: 'smooth' });
+//     });
 
-document
-    .getElementById('footer-security')
-    .addEventListener('click', function () {
-        document
-            .getElementById('platform-section')
-            .scrollIntoView({ behavior: 'smooth' });
-    });
+// document
+//     .getElementById('footer-security')
+//     .addEventListener('click', function () {
+//         document
+//             .getElementById('platform-section')
+//             .scrollIntoView({ behavior: 'smooth' });
+//     });
 
 document
     .getElementById('subscribeForm')
@@ -53,9 +53,9 @@ document
             {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify(data)
             }
         )
             .then((response) => {

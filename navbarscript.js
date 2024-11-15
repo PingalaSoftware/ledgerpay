@@ -2,6 +2,7 @@
 const menuBtn = document.querySelector('.menu-btn');
 const menuItems = document.querySelector('.menu-items');
 const menuOverlay = document.querySelector('.menu-overlay');
+const navLinks = document.querySelectorAll('.nav-link');
 
 // Toggle menu and overlay
 menuBtn.addEventListener('click', () => {
@@ -12,16 +13,26 @@ menuBtn.addEventListener('click', () => {
 
 // Close menu when clicking on the overlay
 menuOverlay.addEventListener('click', () => {
-    menuItems.classList.remove('open');
-    menuOverlay.classList.remove('active');
-    menuBtn.classList.remove('open');
+    closeMenu();
 });
 
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!menuItems.contains(e.target) && !menuBtn.contains(e.target)) {
-        menuItems.classList.remove('open');
-        menuOverlay.classList.remove('active');
-        menuBtn.classList.remove('open');
+        closeMenu();
     }
 });
+
+// Close menu when clicking on a nav item
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        closeMenu();
+    });
+});
+
+// Function to close the menu
+function closeMenu() {
+    menuItems.classList.remove('open');
+    menuOverlay.classList.remove('active');
+    menuBtn.classList.remove('open');
+}

@@ -99,13 +99,23 @@
     max-width: 80%;
 }
 
-.card-image {
+/* .card-image {
     z-index: 3;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     width: 50vw;
+} */
+.card-image {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50vw;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
 
 .background-image {
@@ -133,6 +143,12 @@
 /* Responsive Navbar for Mobile */
 @media (max-width: 768px) {
     /* Mobile Menu */
+    .card-image {
+        width: 90vw;
+        top: 60%;
+        opacity: 0.4;
+    }
+
     .hero-content {
         padding: 130px 0 130px;
     }

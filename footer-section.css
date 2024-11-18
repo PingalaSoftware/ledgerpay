@@ -1,9 +1,9 @@
 /* Footer Styling */
 .footer-section {
     position: relative;
-    background-color: #2c3e50; /* Dark, professional background color */
-    padding: 30px 0; /* Reduced height for the footer */
-    color: #ecf0f1; /* Light text for contrast */
+    background-color: #2c3e50;
+    padding: 30px 0;
+    color: #ecf0f1;
 }
 
 .footer-section .footer-content-wrapper {
@@ -38,14 +38,14 @@
 }
 
 .footer-section .footer-column a {
-    color: #3498db; /* Bright blue for links */
+    color: #3498db;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .footer-section .footer-column a:hover {
-    color: #1abc9c; /* Slight green hover for links */
+    color: #1abc9c;
 }
 
 /* Social Icons */
@@ -56,17 +56,17 @@
 }
 
 .footer-section .social-icons a img {
-    max-width: 25px; /* Reduced icon size */
+    max-width: 25px;
     transition: transform 0.3s ease;
 }
 
 .footer-section .social-icons a:hover img {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
 /* Newsletter Subscription Form */
 .footer-section .subscribe-container {
-    background-color: #34495e; /* Slightly darker background for the subscribe section */
+    background-color: #34495e;
     border-radius: 10px;
     padding: 20px;
     margin-top: 30px;
@@ -113,42 +113,25 @@
 }
 
 .footer-section .subscribe-form .btn:hover {
-    background-color: #2980b9; /* Darker blue on hover */
-}
-
-/* Footer Bottom Text */
-.footer-section .footer-bottom {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 14px;
-    color: #bdc3c7;
-}
-
-.footer-section .footer-bottom a {
-    color: #3498db;
-}
-
-.footer-section .footer-bottom a:hover {
-    color: #1abc9c;
+    background-color: #2980b9;
 }
 
 .footer-section .footer-column a {
-    color: #3498db; /* Bright blue for links */
+    color: #3498db;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    cursor: pointer; /* Add pointer cursor on hover */
+    cursor: pointer;
 }
 
 .footer-section .footer-column a:hover {
-    color: #1abc9c; /* Slight green hover for links */
+    color: #1abc9c;
 }
 
 .footer-section .subscribe-form .sub-form-control {
     background-color: transparent;
     color: #ecf0f1;
-    border: none; /* Remove border */
-    outline: none; /* Remove focus outline */
+    outline: none;
     flex-grow: 1;
     padding: 12px;
     font-size: 16px;
@@ -159,26 +142,25 @@
 @media only screen and (max-width: 768px) {
     .footer-section .footer-content-wrapper {
         display: flex;
-        flex-wrap: wrap; /* Allow content to wrap */
+        flex-wrap: wrap;
     }
 
     /* About Us: Full width */
     .footer-section .footer-column:nth-child(1) {
-        flex: 0 0 100%; /* Full width */
+        flex: 0 0 100%;
         max-width: 100%;
-        margin-bottom: 20px; /* Add spacing below About Us */
+        margin-bottom: 20px;
     }
 
-    /* Quick Links and Contact Information: Side by side */
     .footer-section .footer-column:nth-child(2),
     .footer-section .footer-column:nth-child(3) {
-        flex: 0 0 48%; /* Each column takes 48% of the row */
-        max-width: 48%; /* Prevent overflow */
-        margin-top: 10px; /* No extra space below */
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-top: 10px;
     }
 
     .footer-section .footer-column:nth-child(2) {
-        margin-right: 4%; /* Add space between Quick Links and Contact Info */
+        margin-right: 4%;
     }
 
     .footer-section .subscribe-form {
@@ -188,6 +170,7 @@
     .footer-section .subscribe-form .sub-form-control {
         margin-bottom: 10px;
         width: 100%;
+        text-align: center;
     }
 
     .footer-section .subscribe-form .btn {

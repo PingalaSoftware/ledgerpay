@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LedgerPay - LedgerFi</title>
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/logo.png" />
+
         <!-- Preconnect to external resources for faster loading -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -102,7 +105,9 @@
                                     target="_blank"
                                     class="btn btn-get-started"
                                 >
-                                    <span class="btn-text">Register Now</span>
+                                    <span class="btn-text"
+                                        >Login/Register Now</span
+                                    >
                                 </a>
                             </li>
                         </ul>
@@ -152,7 +157,7 @@
                             class="btn btn-get-started"
                             aria-label="Register for LedgerPe Card"
                         >
-                            Register Now
+                            Login/Register Now
                         </a>
                     </div>
                 </div>
@@ -669,8 +674,8 @@
             <!-- Footer Bottom -->
             <div class="footer-bottom text-center">
                 <p>
-                    2024 &copy; All Rights Reserved. |
-                    <a href="termPrivacy.html">Terms of Privacy</a> |
+                    <span id="current-year"></span> &copy; All Rights Reserved.
+                    | <a href="termPrivacy.html">Terms of Privacy</a> |
                     <a href="userAgreement.html">User Agreement</a>
                 </p>
             </div>
@@ -679,5 +684,9 @@
         <script src="subscribescript.js"></script>
         <script src="quicklinkscript.js"></script>
         <script src="navbarscript.js"></script>
+        <script>
+            document.getElementById('current-year').textContent =
+                new Date().getFullYear();
+        </script>
     </body>
 </html>
